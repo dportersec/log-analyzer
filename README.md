@@ -9,13 +9,13 @@ This Python project is a simple yet powerful tool for analyzing web server log f
 This log file analysis tool provides significant value to cybersecurity professionals in several ways:
 
 - **Threat Detection:** The tool helps in identifying patterns of suspicious behavior, such as repeated 404 errors or access attempts from specific IP addresses. These patterns may indicate malicious activities like probing for vulnerabilities, DDoS attacks, or brute-force attempts.
-
+  
 - **Incident Response:** In the event of a security breach, this tool enables quick analysis of server logs to determine the scope and source of the attack. By identifying which pages were accessed and by whom, cybersecurity teams can respond more effectively to mitigate the breach.
-
+  
 - **Compliance and Auditing:** The tool aids in regular auditing of log files to ensure compliance with industry regulations such as PCI DSS, GDPR, or HIPAA. It helps monitor access patterns to verify that security policies are being followed.
-
+  
 - **Performance and Security Monitoring:** Regular analysis of logs can reveal server performance issues or misconfigurations that could be exploited if left unattended. By addressing these weak points, organizations can enhance their overall security posture.
-
+  
 - **Training and Education:** This project serves as a valuable educational resource for cybersecurity students or professionals, offering practical experience in log analysis, regular expressions, and data visualization.
 
 ### Features
@@ -35,33 +35,30 @@ To use this tool, you need to have Python installed on your system along with a 
    cd log-file-analysis-tool
 
 
-## Install the Required Libraries:
+2. ## Install the Required Libraries:
 pip install pandas matplotlib seaborn
 
 
 ### Usage
-Prepare a Log File:
+1. Prepare a Log File:
 Ensure that you have a web server log file in the same directory as the script. Rename it to access.log, or update the file path in the script.
 
-
-## Run the Script:
-Execute the script in your terminal
+2. Run the Script:
+Execute the script in your terminal:
 python log_analyzer.py
 
+3. View the Results:
+The script will output the total number of 404 errors in the terminal.
+Two bar charts will be displayed:
+Left Chart: Shows the total number of 404 errors.
+Right Chart: Displays the top IP addresses by the number of requests.
+Custom text annotations provide a summary of the results.
 
-## View the Results:
-- The script will output the total number of 404 errors in the terminal.
-- Two bar charts will be displayed:
- - Left Chart: Shows the total number of 404 errors.
- - Right Chart: Displays the top IP addresses by the number of requests.
-- Custom text annotations provide a summary of the results.
-
-# Terminal Output:
+Example Output
 Total 404 errors: 3
 
-# Visualization:
-- A figure showing the total number of 404 errors alongside the top IP addresses by the number of requests, with annotations at the bottom for easy reference.
-
-# Customization
-- Log File Path: You can modify the log_file_path variable in the script to point to a different log file.
-- Top IP Addresses: Adjust the top_n parameter in the top_ip_addresses function to display more or fewer IP addresses in the output.
+Visualization:
+Total 404 Errors: A figure showing the total number of 404 errors alongside the top IP addresses by the number of requests, with annotations at the bottom for easy reference.
+Customization
+Log File Path: You can modify the log_file_path variable in the script to point to a different log file.
+Top IP Addresses: Adjust the top_n parameter in the top_ip_addresses function to display more or fewer IP addresses in the output.
