@@ -33,10 +33,10 @@ To use this tool, you need to have Python installed on your system along with a 
    ```bash
    git clone https://github.com/dillon-porter/log-file-analysis-tool.git
    cd log-file-analysis-tool
+```
 
-
-2. ## Install the Required Libraries:
-pip install pandas matplotlib seaborn
+## Install the Required Libraries:
+```pip install pandas matplotlib seaborn```
 
 
 ### Usage
@@ -55,10 +55,17 @@ Right Chart: Displays the top IP addresses by the number of requests.
 Custom text annotations provide a summary of the results.
 
 Example Output
-Total 404 errors: 3
+```Total 404 errors: 3```
 
-Visualization:
-Total 404 Errors: A figure showing the total number of 404 errors alongside the top IP addresses by the number of requests, with annotations at the bottom for easy reference.
-Customization
-Log File Path: You can modify the log_file_path variable in the script to point to a different log file.
-Top IP Addresses: Adjust the top_n parameter in the top_ip_addresses function to display more or fewer IP addresses in the output.
+## Visualization
+
+- **Total 404 Errors:** A figure showing the total number of 404 errors alongside the top IP addresses by the number of requests, with annotations at the bottom for easy reference.
+
+### Customization
+
+- **Log File Path:** You can modify the `log_file_path` variable in the script to point to a different log file.
+- **Top IP Addresses:** Adjust the `top_n` parameter in the `top_ip_addresses` function to display more or fewer IP addresses in the output.
+
+![Visualization of Log Analysis](https://github.com/user-attachments/assets/8cae1ea6-8eee-4899-ba6e-948d1fc83b32)
+
+
